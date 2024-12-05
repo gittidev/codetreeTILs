@@ -1,4 +1,4 @@
-let a,b,c = [5,6,7]
+let [a,b,c] = [5,6,7]
 
 let temp = b
 b = a
