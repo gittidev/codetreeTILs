@@ -8,4 +8,6 @@ if (a===1) {
     console.log("Tom")
 } else if (a===3) {
     console.log("Paul")
+} else {
+    console.log("Vacancy")
 }
