@@ -3,7 +3,7 @@ const fs = require("fs");
 let [a,b,c] = fs.readFileSync(0).toString().trim().split(" ").map(i=>  Number(i));
 
 let  sum = a+b+c;
-let avg = (sum/3).toFixed(0);
+let avg = parseInt(sum/3)
 
 console.log(sum)
 console.log(avg)
