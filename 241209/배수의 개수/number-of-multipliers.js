@@ -11,7 +11,7 @@ for (let i=0;  i<10; i++) {
         result1++
     } 
 
-    if (x%3==0) {
+    if (x%5==0) {
         result2++
     }
 }
