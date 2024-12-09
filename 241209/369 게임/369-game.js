@@ -1,30 +1,25 @@
 const fs = require("fs");
 
 let n = Number(fs.readFileSync(0).toString().trim());
-let arr = [3,6,9]
 
 
 
-result = [];
-let i = 1
-while (i<=n) {
-    if (i%3==0) {
-        result.push(0)
-        i++
-    } else if (i>=10) {
-        i.toString().split("") 
-        for (j=0; j<=i.length(); j++) {
-            if (arr.includes(i[j])) {
-                result.push(0)
-            }
-        }
-        i++
-    } else {
-   result.push(i)
-        i++
+let result = "";
+for (let i = 1; i <= n; i++) {
+    if (i % 3 === 0) {
+        result += "0 ";
     }
-
-
+    else if (i % 10 === 3 || i % 10 === 6 || i % 10 === 9) {
+        result += "0 ";
+    }
+    else if (parseInt(i / 10) === 3 || parseInt(i / 10) === 6 || parseInt(i / 10) === 9) {
+        result += "0 ";
+    }
+    else {
+        result += i + " ";
+    }
 }
 
-console.log(result.join(" "))
+console.log(result);
+
+
