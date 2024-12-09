@@ -8,18 +8,16 @@ let arr = [3,6,9]
 result = [];
 let i = 1
 while (i<=n) {
-
-    if (i>=10) {
+    if (i%3==0) {
+        result.push(0)
+        i++
+    } else if (i>=10) {
         i.toString().split("") 
         for (j=0; j<=i.length(); j++) {
-            if (arr.includes(j)) {
+            if (arr.includes(i[j])) {
                 result.push(0)
-                return
             }
         }
-        i++
-    } else if (i%3==0) {
-        result.push(0)
         i++
     } else {
    result.push(i)
