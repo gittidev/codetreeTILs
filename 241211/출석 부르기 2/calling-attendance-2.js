@@ -4,9 +4,7 @@ let input = fs.readFileSync(0).toString().trim().split("\n").map(i=>Number(i));
 let index = 0;
 
 while (index < input.length) {
-    let num = input[index];
-    
-    switch (num) {
+    switch (input[index]) {
         case 1: 
             console.log("John");
             break;
@@ -21,7 +19,7 @@ while (index < input.length) {
             break;
         default: 
             console.log("Vacancy");
-            process.exit();  // 프로그램 종료
+            return;  // 함수나 프로그램 종료
     }
     index++;
 }
